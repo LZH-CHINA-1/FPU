@@ -1,0 +1,32 @@
+
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# An error report file with more information is saved as:
+# c:\Users\¡ı’Ò∫¿\Desktop\files\JYD\FPU\FPU1\FPU1\hs_err_pid24364.log
+srcscan starts
+=============== Using precompiled files for SV std libs ===========
+INFO: The Verilog library search path for library "std" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/sv/std" (VERI-1509)
+INFO: The Verilog library search path for library "uvm" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/sv/uvm" (VERI-1509)
+INFO: analyzing module FPU_single (VERI-9002)
+C:/Users/ADMINI~1/AppData/Local/Temp/VivadoEditorAssist7965159695087553938.tmp(115): ERROR: extra comma in port association list is not allowed (VERI-2523)
+INFO: analyzing module compare_unit (VERI-9002)
+INFO: analyzing module convert_unit (VERI-9002)
+C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/new/convert_unit.sv(98): ERROR: 'ex_real' is not a constant (VERI-1188)
+C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/new/convert_unit.sv(98): ERROR: range must be bounded by constant expressions (VERI-1952)
+INFO: analyzing module fcvt_ff_unit (VERI-9002)
+INFO: analyzing module fp_formatconv (VERI-9002)
+INFO: analyzing module fsgnj_unit (VERI-9002)
+INFO: analyzing module lzc_64 (VERI-9002)
+INFO: analyzing module lzc_32 (VERI-9002)
+INFO: analyzing module lzc_16 (VERI-9002)
+INFO: analyzing module lzc_8 (VERI-9002)
+INFO: analyzing module lzc_4 (VERI-9002)
+INFO: analyzing module minmax_unit (VERI-9002)
+INFO: analyzing module FPU_top (VERI-9002)
+C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/new/FPU_top.sv(55): INFO: undeclared symbol 'data3', assumed default net type 'wire' (VERI-2561)
+INFO: analyzing module FPU_double (VERI-9002)
+INFO: analyzing module fsqrt (VERI-9002)
+INFO: analyzing module fsqrt_unit (VERI-9002)
+INFO: analyzing module sqrt_unit (VERI-9002)
+srcscan exits with return value 0
