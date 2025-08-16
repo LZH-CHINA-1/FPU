@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Aug 15 02:55:53 2025
-# Process ID: 31464
-# Current directory: C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.runs/fadd_single_synth_1
+# Start of session at: Sun Aug 17 00:15:19 2025
+# Process ID: 12972
+# Current directory: E:/FPU/vivado_project/FPU1.runs/fadd_single_synth_1
 # Command line: vivado.exe -log fadd_single.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fadd_single.tcl
-# Log file: C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.runs/fadd_single_synth_1/fadd_single.vds
-# Journal file: C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.runs/fadd_single_synth_1\vivado.jou
+# Log file: E:/FPU/vivado_project/FPU1.runs/fadd_single_synth_1/fadd_single.vds
+# Journal file: E:/FPU/vivado_project/FPU1.runs/fadd_single_synth_1\vivado.jou
 # Running On: LAPTOP-PT2H2IRH, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16962 MB
 #-----------------------------------------------------------
 source fadd_single.tcl -notrace

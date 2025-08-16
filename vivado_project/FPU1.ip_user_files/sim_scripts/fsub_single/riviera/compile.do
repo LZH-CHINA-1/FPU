@@ -57,7 +57,7 @@ vlog -work floating_point_v7_1_16  -incr -v2k5 -l xbip_utils_v3_0_11 -l axi_util
 "../../../ipstatic/hdl/floating_point_v7_1_rfs.v" \
 
 vlog -work xil_defaultlib  -incr -v2k5 -l xbip_utils_v3_0_11 -l axi_utils_v2_0_7 -l xbip_pipe_v3_0_7 -l xbip_dsp48_wrapper_v3_0_5 -l xbip_dsp48_addsub_v3_0_7 -l xbip_dsp48_multadd_v3_0_7 -l xbip_bram18k_v3_0_7 -l mult_gen_v12_0_19 -l floating_point_v7_1_16 -l xil_defaultlib \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fsub_single/sim/fsub_single.v" \
+"../../../../FPU1.gen/sources_1/ip/fsub_single/sim/fsub_single.v" \
 
 
 vlog -work xil_defaultlib \

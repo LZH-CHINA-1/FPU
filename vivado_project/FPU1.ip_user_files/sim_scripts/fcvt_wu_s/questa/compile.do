@@ -54,7 +54,7 @@ vlog -work floating_point_v7_1_16  -incr -mfcu  \
 "../../../ipstatic/hdl/floating_point_v7_1_rfs.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/sim/fcvt_wu_s.v" \
+"../../../../FPU1.gen/sources_1/ip/fcvt_wu_s/sim/fcvt_wu_s.v" \
 
 
 vlog -work xil_defaultlib \

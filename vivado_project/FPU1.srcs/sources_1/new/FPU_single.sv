@@ -105,7 +105,7 @@ module FPU_single#(
         .m_axis_result_tdata (result_sub),
         .m_axis_result_tuser (flags_sub)
     );
-    floating_point_mul_s u_floating_point_mul_s(
+    fmul_single u_fmul_single(
         .aclk       (clk        ),
         .s_axis_a_tvalid(val_mul     ),
         .s_axis_a_tdata (data1),
@@ -115,7 +115,7 @@ module FPU_single#(
         .m_axis_result_tdata (result_mul),
         .m_axis_result_tuser (flags_mul)
     );
-    div_single u_div_single(
+    fdiv_single u_fdiv_single(
         .aclk       (clk        ),
         .s_axis_a_tvalid(val_div     ),
         .s_axis_a_tdata (data1),
@@ -125,7 +125,7 @@ module FPU_single#(
         .m_axis_result_tdata (result_div),
         .m_axis_result_tuser (flags_div)
     );
-    sqrt_single u_sqrt_single(
+    fsqrt_single u_fsqrt_single(
         .aclk       (clk        ),
         .s_axis_a_tvalid(val_sqrt     ),
         .s_axis_a_tdata (data1),

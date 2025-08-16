@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.runs/fcvt_s_wu_synth_1'
+HD_PWD='E:/FPU/vivado_project/FPU1.runs/fcvt_s_wu_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Aug 16 23:26:05 2025
+# Process ID: 18288
+# Current directory: E:/FPU/vivado_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26176 E:\FPU\vivado_project\FPU1.xpr
+# Log file: E:/FPU/vivado_project/vivado.log
+# Journal file: E:/FPU/vivado_project\vivado.jou
+# Running On: LAPTOP-PT2H2IRH, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16962 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPU/vivado_project/FPU1.xpr
+update_compile_order -fileset sources_1
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fdiv_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_DIVIDE_BY_ZERO {true} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {57} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Divide} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fdiv_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci]
+catch { config_ip_cache -export [get_ips -all fdiv_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci]
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_0_1/floating_point_0.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_0_1/floating_point_0.xci
+export_ip_user_files -of_objects  [get_files E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset floating_point_1 E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
+file delete -force E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1
+file delete -force e:/FPU/vivado_project/FPU1.gen/sources_1/ip/floating_point_1
