@@ -2,17 +2,6 @@
 2020.2
 Oct 13 2023
 20:47:58
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/div_single/sim/div_single.v,1755193642,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_mul_s/sim/floating_point_mul_s.v,,div_single,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fadd_single/sim/fadd_single.v,1755197748,verilog,,,,fadd_single,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_w/sim/fcvt_s_w.v,1755208664,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmsub_single/sim/fmsub_single.v,,fcvt_s_w,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_wu/sim/fcvt_s_wu.v,1755208703,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_w/sim/fcvt_s_w.v,,fcvt_s_wu,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_w_s/sim/fcvt_w_s.v,1755209093,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_wu/sim/fcvt_s_wu.v,,fcvt_w_s,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/sim/fcvt_wu_s.v,1755209743,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_w_s/sim/fcvt_w_s.v,,fcvt_wu_s,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_mul_s/sim/floating_point_mul_s.v,1755191296,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fsub_single/sim/fsub_single.v,,floating_point_mul_s,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmadd_single/sim/fmadd_single.v,1755199152,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sim/sqrt_single.v,,fmadd_single,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmsub_single/sim/fmsub_single.v,1755199204,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmadd_single/sim/fmadd_single.v,,fmsub_single,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fsub_single/sim/fsub_single.v,1755197803,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fadd_single/sim/fadd_single.v,,fsub_single,,uvm,,,,,,
-C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sim/sqrt_single.v,1755201889,verilog,,C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/div_single/sim/div_single.v,,sqrt_single,,uvm,,,,,,
-E:/FPU/vivado_project/FPU1.sim/sim_1/behav/xsim/glbl.v,1755289844,verilog,,,,glbl,,uvm,,,,,,
-E:/FPU/vivado_project/FPU1.srcs/sim_1/new/tb_FPU_single.sv,1755289844,systemVerilog,,,,tb_FPU_single,,uvm,,,,,,
-E:/FPU/vivado_project/FPU1.srcs/sources_1/new/FPU_single.sv,1755289844,systemVerilog,,E:/FPU/vivado_project/FPU1.srcs/sim_1/new/tb_FPU_single.sv,,FPU_single,,uvm,,,,,,
+C:/Users/Lenovo/Desktop/JYD/FPU/vivado_project/FPU1.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Lenovo/Desktop/JYD/FPU/vivado_project/FPU1.srcs/sim_1/new/tb_decode.sv,1755369632,systemVerilog,,,,tb_decode,,uvm,,,,,,
+C:/Users/Lenovo/Desktop/JYD/FPU/vivado_project/FPU1.srcs/sources_1/new/decode.sv,1755371761,systemVerilog,,C:/Users/Lenovo/Desktop/JYD/FPU/vivado_project/FPU1.srcs/sim_1/new/tb_decode.sv,,decode,,uvm,,,,,,

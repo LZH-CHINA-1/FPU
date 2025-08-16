@@ -1,2 +1,56 @@
 Time resolution is 1 ps
-fadd: result=40400000 result_ideal=40400000 flags=00000
+flw: fload=1, imm=001, rs1= 0, rd= 0, inst= 0, inst_ideal= 0, error=0
+fsw: fstore=1, imm=003, rs1= 0, rs2= 0, inst= 0, inst_ideal= 0, error=0
+fadd.s: inst= 1, inst_ideal= 1, rs1= 1, rs2= 2, rd= 4, error=0
+fsub.s: inst= 2, inst_ideal= 2, rs1= 1, rs2= 2, rd= 5, error=0
+fmul.s: inst= 3, inst_ideal= 3, rs1= 1, rs2= 2, rd= 6, error=0
+fdiv.s: inst= 4, inst_ideal= 4, rs1= 1, rs2= 2, rd= 7, error=0
+fsqrt.s: inst= 5, inst_ideal= 5, rs1= 1, rd= 8, error=0
+fsgnj.s: inst=20, inst_ideal=20, rs1= 1, rs2= 2, rd= 9, error=0
+fsgnjn.s: inst=21, inst_ideal=21, rs1= 1, rs2= 2, rd=10, error=0
+fsgnjx.s: inst=22, inst_ideal=22, rs1= 1, rs2= 2, rd=11, error=0
+fmin.s: inst=23, inst_ideal=23, rs1= 1, rs2= 2, rd=12, error=0
+fmax.s: inst=24, inst_ideal=24, rs1= 1, rs2= 2, rd=13, error=0
+fcvt.s.w: inst=10, inst_ideal=10, rs1= 1, rd=14, error=0
+fcvt.s.wu: inst=11, inst_ideal=11, rs1= 1, rd=15, error=0
+fcvt.w.s: inst=12, inst_ideal=12, rs1= 1, rd=16, error=0
+fcvt.wu.s: inst=13, inst_ideal=13, rs1= 1, rd=17, error=0
+feq.s: inst=30, inst_ideal=30, rs1= 1, rs2= 2, rd=18, error=0
+flt.s: inst=29, inst_ideal=29, rs1= 1, rs2= 2, rd=19, error=0
+fle.s: inst=28, inst_ideal=28, rs1= 1, rs2= 2, rd=20, error=0
+fclass.s: inst=25, inst_ideal=25, rs1= 1, rd=21, error=0
+fmv.x.w: inst=26, inst_ideal=26, rs1= 1, rd=22, error=0
+fmv.w.x: inst=27, inst_ideal=27, rs1= 1, rd=23, error=0
+fmadd.s: inst= 6, inst_ideal= 6, rs1= 1, rs2= 2, rs3= 1, rd= 4, error=0
+fmsub.s: inst= 7, inst_ideal= 7, rs1= 1, rs2= 2, rs3= 1, rd= 4, error=0
+fnmadd.s: inst= 8, inst_ideal= 8, rs1= 1, rs2= 2, rs3= 1, rd= 4, error=0
+fnmsub.s: inst= 9, inst_ideal= 9, rs1= 1, rs2= 2, rs3= 1, rd= 4, error=0
+fadd.d: inst= 1, inst_ideal= 1, rs1= 1, rs2= 2, rd= 8, fmt=01, error=0
+fsub.d: inst= 2, inst_ideal= 2, rs1= 1, rs2= 2, rd= 9, fmt=01, error=0
+fmul.d: inst= 3, inst_ideal= 3, rs1= 1, rs2= 2, rd=10, fmt=01, error=0
+fdiv.d: inst= 4, inst_ideal= 4, rs1= 1, rs2= 2, rd=11, fmt=01, error=0
+fsqrt.d: inst= 5, inst_ideal= 5, rs1= 1, rd=12, fmt=01, error=0
+fsgnj.d: inst=20, inst_ideal=20, rs1= 1, rs2= 2, rd=13, fmt=01, error=0
+fsgnjn.d: inst=21, inst_ideal=21, rs1= 1, rs2= 2, rd=14, fmt=01, error=0
+fsgnjx.d: inst=22, inst_ideal=22, rs1= 1, rs2= 2, rd=15, fmt=01, error=0
+fmin.d: inst=23, inst_ideal=23, rs1= 1, rs2= 2, rd=16, fmt=01, error=0
+fmax.d: inst=24, inst_ideal=24, rs1= 1, rs2= 2, rd=17, fmt=01, error=0
+fcvt.d.s: inst=15, inst_ideal=15, rs1= 1, rd=18, fmt=01, error=0
+fcvt.s.d: inst=14, inst_ideal=14, rs1= 1, rd=19, fmt=00, error=0
+fcvt.w.d: inst=18, inst_ideal=18, rs1= 1, rd=20, fmt=01, error=0
+fcvt.wu.d: inst=19, inst_ideal=19, rs1= 1, rd=21, fmt=01, error=0
+fcvt.d.w: inst=16, inst_ideal=16, rs1= 1, rd=22, fmt=01, error=0
+fcvt.d.wu: inst=17, inst_ideal=17, rs1= 1, rd=23, fmt=01, error=0
+feq.d: inst=30, inst_ideal=30, rs1= 1, rs2= 2, rd=24, fmt=01, error=0
+flt.d: inst=29, inst_ideal=29, rs1= 1, rs2= 2, rd=25, fmt=01, error=0
+fle.d: inst=28, inst_ideal=28, rs1= 1, rs2= 2, rd=26, fmt=01, error=0
+fclass.d: inst=25, inst_ideal=25, rs1= 1, rd=27, fmt=01, error=0
+fmadd.d: inst= 6, inst_ideal= 6, rs1= 1, rs2= 2, rs3= 3, rd= 8, fmt=01, error=0
+fmsub.d: inst= 7, inst_ideal= 7, rs1= 1, rs2= 2, rs3= 3, rd= 8, fmt=01, error=0
+fnmadd.d: inst= 8, inst_ideal= 8, rs1= 1, rs2= 2, rs3= 3, rd= 8, fmt=01, error=0
+fnmsub.d: inst= 9, inst_ideal= 9, rs1= 1, rs2= 2, rs3= 3, rd= 8, fmt=01, error=0
+error1: inst= 0, inst_ideal= 0, error=1 (应为1)
+error2: inst= 0, inst_ideal= 0, error=1 (应为1)
+error3: inst= 0, inst_ideal= 0, error=1 (应为1)
+error4: inst= 0, inst_ideal= 0, error=1 (应为1)
+$finish called at time : 540 ns : File "C:/Users/Lenovo/Desktop/JYD/FPU/vivado_project/FPU1.srcs/sim_1/new/tb_decode.sv" Line 315

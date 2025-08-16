@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="fmul_single_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1755361040">
   <File Type="PA-TCL" Name="fmul_single.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="fmul_single_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fmul_single_reports.tcl"/>
   <File Type="RDS-RDS" Name="fmul_single.vds"/>
   <File Type="RDS-UTIL" Name="fmul_single_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="fmul_single_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="fmul_single.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="fmul_single_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="fmul_single_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fmul_single" RelGenDir="$PGENDIR/fmul_single">
     <File Path="$PSRCDIR/sources_1/ip/fmul_single/fmul_single.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

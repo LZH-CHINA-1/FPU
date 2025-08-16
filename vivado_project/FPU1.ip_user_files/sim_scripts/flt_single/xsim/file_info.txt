@@ -1,0 +1,2 @@
+flt_single.v,verilog,xil_defaultlib,../../../../FPU1.gen/sources_1/ip/flt_single/sim/flt_single.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
