@@ -1,16 +1,2 @@
 Time resolution is 1 ps
 fadd: result=40400000 result_ideal=40400000 flags=00000
-fsub: result=3f800000 result_ideal=3f800000 flags=00000
-fmul: result=41000000 result_ideal=41000000 flags=00000
-fdiv: result=40000000 result_ideal=40000000 flags=00000
-fsqrt: result=40400000 result_ideal=40400000 flags=00000
-fmadd: result=41200000 result_ideal=41200000 flags=00000
-fmsub: result=40000000 result_ideal=40000000 flags=00000
-fnmadd: result=c0000000 result_ideal=c0000000 flags=00000
-fnmsub: result=c1200000 result_ideal=c1200000 flags=00000
-fadd overflow: result=7f800000 result_ideal=7f800000 flags=00100
-fsub underflow: result=ff800000 result_ideal=ff800000 flags=00100
-fdiv div_by_zero: result=7f800000 result_ideal=7f800000 flags=01000
-fmul inf: result=7fc00000 result_ideal=7fc00000 flags=10000
-fadd nan: result=7fc00000 result_ideal=7fc00000 flags=00000
-$stop called at time : 7030 ns : File "C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sim_1/new/tb_FPU_single.sv" Line 187

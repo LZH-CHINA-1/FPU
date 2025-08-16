@@ -1,0 +1,2 @@
+fcvt_s_d.v,verilog,xil_defaultlib,../../../../FPU1.gen/sources_1/ip/fcvt_s_d/sim/fcvt_s_d.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

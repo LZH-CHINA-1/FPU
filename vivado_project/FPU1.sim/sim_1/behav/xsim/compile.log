@@ -1,28 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/sim/fcvt_wu_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fcvt_wu_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_w_s/sim/fcvt_w_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fcvt_w_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_wu/sim/fcvt_s_wu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fcvt_s_wu
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_w/sim/fcvt_s_w.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fcvt_s_w
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmsub_single/sim/fmsub_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmsub_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmadd_single/sim/fmadd_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fmadd_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sim/sqrt_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sqrt_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/div_single/sim/div_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module div_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_mul_s/sim/floating_point_mul_s.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module floating_point_mul_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fsub_single/sim/fsub_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsub_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fadd_single/sim/fadd_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fadd_single
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/new/FPU_single.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPU/vivado_project/FPU1.srcs/sources_1/new/FPU_single.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FPU_single
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sim_1/new/tb_FPU_single.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPU/vivado_project/FPU1.srcs/sim_1/new/tb_FPU_single.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_FPU_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPU/vivado_project/FPU1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Aug 16 18:46:59 2025
+# Process ID: 24008
+# Current directory: E:/FPU/vivado_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12788 E:\FPU\vivado_project\FPU1.xpr
+# Log file: E:/FPU/vivado_project/vivado.log
+# Journal file: E:/FPU/vivado_project\vivado.jou
+# Running On: LAPTOP-PT2H2IRH, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16962 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPU/vivado_project/FPU1.xpr
+update_compile_order -fileset sources_1
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fadd_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.Add_Sub_Value {Add} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {14} \
+  CONFIG.C_Mult_Usage {Full_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Add_Subtract} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fadd_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci]
+catch { config_ip_cache -export [get_ips -all fadd_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fsub_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.Add_Sub_Value {Subtract} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {14} \
+  CONFIG.C_Mult_Usage {Full_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fsub_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci]
+catch { config_ip_cache -export [get_ips -all fsub_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci]
+launch_runs fsub_double_synth_1 -jobs 16
+wait_on_run fsub_double_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fmul_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {15} \
+  CONFIG.C_Mult_Usage {Full_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Multiply} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fmul_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci]
+catch { config_ip_cache -export [get_ips -all fmul_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_1
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_DIVIDE_BY_ZERO {true} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {57} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Divide} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips floating_point_1]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_1] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+launch_runs floating_point_1_synth_1 -jobs 16
+wait_on_run floating_point_1_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fsqrt_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Latency {57} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Square_root} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fsqrt_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci]
+catch { config_ip_cache -export [get_ips -all fsqrt_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci]
+launch_runs fsqrt_double_synth_1 -jobs 16
+wait_on_run fsqrt_double_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fmadd_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.Add_Sub_Value {Add} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {26} \
+  CONFIG.C_Mult_Usage {Medium_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_A_TLAST {true} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {FMA} \
+  CONFIG.RESULT_TLAST_Behv {Pass_A_TLAST} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fmadd_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci]
+catch { config_ip_cache -export [get_ips -all fmadd_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci]
+launch_runs fmadd_double_synth_1 -jobs 16
+wait_on_run fmadd_double_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fmsub_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.Add_Sub_Value {Subtract} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {26} \
+  CONFIG.C_Mult_Usage {Medium_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {FMA} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fmsub_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci]
+catch { config_ip_cache -export [get_ips -all fmsub_double] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci]
+launch_runs fmsub_double_synth_1 -jobs 16
+wait_on_run fmsub_double_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_d_s
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Single} \
+  CONFIG.C_A_Exponent_Width {8} \
+  CONFIG.C_A_Fraction_Width {24} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {2} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Float_to_float} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fcvt_d_s]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci]
+catch { config_ip_cache -export [get_ips -all fcvt_d_s] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci]
+launch_runs fcvt_d_s_synth_1 -jobs 16
+wait_on_run fcvt_d_s_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_s_d
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {3} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {8} \
+  CONFIG.C_Result_Fraction_Width {24} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Float_to_float} \
+  CONFIG.Result_Precision_Type {Single} \
+] [get_ips fcvt_s_d]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci]
+catch { config_ip_cache -export [get_ips -all fcvt_s_d] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci]
+launch_runs fcvt_s_d_synth_1 -jobs 16
+wait_on_run fcvt_s_d_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_d_w
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Int32} \
+  CONFIG.C_A_Exponent_Width {32} \
+  CONFIG.C_A_Fraction_Width {0} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Latency {6} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Fixed_to_float} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fcvt_d_w]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci]
+catch { config_ip_cache -export [get_ips -all fcvt_d_w] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci]
+launch_runs fcvt_d_w_synth_1 -jobs 16
+wait_on_run fcvt_d_w_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_d_wu
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Uint32} \
+  CONFIG.C_A_Exponent_Width {32} \
+  CONFIG.C_A_Fraction_Width {0} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Latency {5} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Fixed_to_float} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fcvt_d_wu]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci]
+catch { config_ip_cache -export [get_ips -all fcvt_d_wu] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci]
+launch_runs fcvt_d_wu_synth_1 -jobs 16
+wait_on_run fcvt_d_wu_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_w_d
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Latency {6} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {32} \
+  CONFIG.C_Result_Fraction_Width {0} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Float_to_fixed} \
+  CONFIG.Result_Precision_Type {Int32} \
+] [get_ips fcvt_w_d]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci]
+catch { config_ip_cache -export [get_ips -all fcvt_w_d] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci]
+launch_runs fcvt_w_d_synth_1 -jobs 16
+wait_on_run fcvt_w_d_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_wu_d
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Latency {6} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {33} \
+  CONFIG.C_Result_Fraction_Width {31} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Float_to_fixed} \
+  CONFIG.Result_Precision_Type {Custom} \
+] [get_ips fcvt_wu_d]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci]
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci]
+catch { config_ip_cache -export [get_ips -all fcvt_wu_d] }
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci]
+launch_runs fcvt_wu_d_synth_1 -jobs 16
+wait_on_run fcvt_wu_d_synth_1
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

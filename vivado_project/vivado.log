@@ -3,16 +3,16 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Aug 16 03:10:29 2025
-# Process ID: 15852
-# Current directory: C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27072 C:\Users\¡ı’Ò∫¿\Desktop\files\JYD\FPU\FPU1\FPU1\FPU1.xpr
-# Log file: C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/vivado.log
-# Journal file: C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1\vivado.jou
+# Start of session at: Sat Aug 16 23:26:05 2025
+# Process ID: 18288
+# Current directory: E:/FPU/vivado_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26176 E:\FPU\vivado_project\FPU1.xpr
+# Log file: E:/FPU/vivado_project/vivado.log
+# Journal file: E:/FPU/vivado_project\vivado.jou
 # Running On: LAPTOP-PT2H2IRH, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16962 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.xpr
+open_project E:/FPU/vivado_project/FPU1.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
@@ -74,7 +74,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/¡ı’Ò∫¿/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -110,7 +109,63 @@ WARNING: [IP_Flow 19-3664] IP 'fcvt_wu_s' generated file not found 'c:/Users/Des
 WARNING: [IP_Flow 19-3664] IP 'fcvt_wu_s' generated file not found 'c:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/fcvt_wu_s_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'fcvt_wu_s' generated file not found 'c:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/fcvt_wu_s_sim_netlist.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'fcvt_wu_s' generated file not found 'c:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/fcvt_wu_s_sim_netlist.vhdl'. Please regenerate to continue.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1510.102 ; gain = 395.949
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1556.641 ; gain = 412.363
 update_compile_order -fileset sources_1
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fdiv_double
+set_property -dict [list \
+  CONFIG.A_Precision_Type {Double} \
+  CONFIG.C_A_Exponent_Width {11} \
+  CONFIG.C_A_Fraction_Width {53} \
+  CONFIG.C_Accum_Input_Msb {32} \
+  CONFIG.C_Accum_Lsb {-31} \
+  CONFIG.C_Accum_Msb {32} \
+  CONFIG.C_Has_DIVIDE_BY_ZERO {true} \
+  CONFIG.C_Has_INVALID_OP {true} \
+  CONFIG.C_Has_OVERFLOW {true} \
+  CONFIG.C_Has_UNDERFLOW {true} \
+  CONFIG.C_Latency {57} \
+  CONFIG.C_Mult_Usage {No_Usage} \
+  CONFIG.C_Rate {1} \
+  CONFIG.C_Result_Exponent_Width {11} \
+  CONFIG.C_Result_Fraction_Width {53} \
+  CONFIG.Flow_Control {NonBlocking} \
+  CONFIG.Has_RESULT_TREADY {false} \
+  CONFIG.Operation_Type {Divide} \
+  CONFIG.Result_Precision_Type {Double} \
+] [get_ips fdiv_double]
+generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fdiv_double'...
+generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fdiv_double'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fdiv_double'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fdiv_double'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fdiv_double'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fdiv_double'...
+catch { config_ip_cache -export [get_ips -all fdiv_double] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fdiv_double
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f87ca1c5c498802c to dir: e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/FPU/vivado_project/FPU1.cache/ip/2023.2/f/8/f87ca1c5c498802c/floating_point_1.dcp to e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/FPU/vivado_project/FPU1.cache/ip/2023.2/f/8/f87ca1c5c498802c/floating_point_1_sim_netlist.v to e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/FPU/vivado_project/FPU1.cache/ip/2023.2/f/8/f87ca1c5c498802c/floating_point_1_sim_netlist.vhdl to e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/FPU/vivado_project/FPU1.cache/ip/2023.2/f/8/f87ca1c5c498802c/floating_point_1_stub.v to e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/FPU/vivado_project/FPU1.cache/ip/2023.2/f/8/f87ca1c5c498802c/floating_point_1_stub.vhdl to e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/FPU/vivado_project/FPU1.gen/sources_1/ip/fdiv_double/fdiv_double_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP fdiv_double, cache-ID = f87ca1c5c498802c; cache size = 43.274 MB.
+export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci'
+export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fdiv_double/fdiv_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_0_1/floating_point_0.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_0_1/floating_point_0.xci
+export_ip_user_files -of_objects  [get_files E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset floating_point_1 E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
+INFO: [Project 1-386] Moving file 'E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' from fileset 'floating_point_1' to fileset 'sources_1'.
+file delete -force E:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1
+file delete -force e:/FPU/vivado_project/FPU1.gen/sources_1/ip/floating_point_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 16 03:59:19 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 16 23:30:05 2025...

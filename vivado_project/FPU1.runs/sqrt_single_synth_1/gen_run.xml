@@ -7,7 +7,7 @@
   <File Type="RDS-UTIL-PB" Name="sqrt_single_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="sqrt_single.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sqrt_single" RelGenDir="$PGENDIR/sqrt_single">
-    <File Path="$PPRDIR/../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sqrt_single.xci">
+    <File Path="C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sqrt_single.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,7 +20,7 @@
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sqrt_single" RelGenDir="$PGENDIR/sqrt_single">
-    <File Path="$PPRDIR/../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sqrt_single.xci">
+    <File Path="C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sqrt_single.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

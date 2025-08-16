@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fcvt_w_d_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1755347544">
+  <File Type="PA-TCL" Name="fcvt_w_d.tcl"/>
+  <File Type="REPORTS-TCL" Name="fcvt_w_d_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fcvt_w_d.vds"/>
+  <File Type="RDS-UTIL" Name="fcvt_w_d_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fcvt_w_d_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fcvt_w_d.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fcvt_w_d" RelGenDir="$PGENDIR/fcvt_w_d">
+    <File Path="$PSRCDIR/sources_1/ip/fcvt_w_d/fcvt_w_d.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fcvt_w_d"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fcvt_w_d" RelGenDir="$PGENDIR/fcvt_w_d">
+    <File Path="$PSRCDIR/sources_1/ip/fcvt_w_d/fcvt_w_d.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fcvt_w_d"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

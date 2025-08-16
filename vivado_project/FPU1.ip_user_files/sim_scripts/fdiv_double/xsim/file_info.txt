@@ -1,0 +1,2 @@
+fdiv_double.v,verilog,xil_defaultlib,../../../../FPU1.gen/sources_1/ip/fdiv_double/sim/fdiv_double.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

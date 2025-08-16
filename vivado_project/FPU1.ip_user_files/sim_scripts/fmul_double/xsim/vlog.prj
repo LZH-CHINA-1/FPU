@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../FPU1.gen/sources_1/ip/fmul_double/sim/fmul_double.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

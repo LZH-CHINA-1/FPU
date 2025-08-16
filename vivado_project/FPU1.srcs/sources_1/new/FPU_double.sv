@@ -20,7 +20,428 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module FPU_double(
-
+module FPU_double#(
+    parameter fadd=5'd1,fsub=5'd2,fmul=5'd3,fdiv=5'd4,fsqrt=5'd5,fmadd=5'd6,fmsub=5'd7,fnmadd=5'd8,fnmsub=5'd9,
+    fcvt_s_w=5'd10,fcvt_s_wu=5'd11,fcvt_w_s=5'd12,fcvt_wu_s=5'd13,fcvt_s_d=5'd14,fcvt_d_s=5'd15
+)
+(
+    input clk,
+    input rst_n,
+    input [63:0] data1,
+    input [63:0] data2,
+    input [63:0] data3,
+    input [4:0] inst,
+    //input [9:0]class1,
+    //input [9:0]class2,
+    //input [9:0]class3,
+    output logic [63:0] result,
+    output logic [4:0] flags
     );
+    logic[31:0]data1_d,data2_d,data3_d;
+
+    logic val_add;
+    logic val_sub;
+    logic val_mul;
+    logic val_div;
+    logic val_sqrt;
+    logic val_madd;
+    logic val_msub;
+    logic val_cvt_d_w;
+    logic val_cvt_d_wu;
+    logic val_cvt_w_d;
+    logic val_cvt_wu_d;
+    logic val_cvt_s_d;
+    logic val_cvt_d_s;
+
+    logic valid_add;
+    logic valid_sub;
+    logic valid_mul;
+    logic valid_div;
+    logic valid_sqrt;
+    logic valid_madd;
+    logic valid_msub;
+    logic valid_cvt_d_w;
+    logic valid_cvt_d_wu;
+    logic valid_cvt_w_d;
+    logic valid_cvt_wu_d;
+    logic valid_cvt_s_d;
+    logic valid_cvt_d_s;
+
+
+    logic [63:0] result_add;
+    logic [63:0] result_sub;
+    logic [63:0] result_mul;
+    logic [63:0] result_div;
+    logic [63:0] result_sqrt;
+    logic [63:0] result_madd;
+    logic [63:0] result_msub;
+    logic [63:0] result_cvt_d_w;
+    logic [63:0] result_cvt_d_wu;
+    logic [63:0] result_cvt_w_d;
+    logic [63:0] result_cvt_wu_d;
+    logic [63:0] result_cvt_s_d;
+    logic [63:0] result_cvt_d_s;
+
+    logic [2:0] flags_add;
+    logic [2:0] flags_sub;
+    logic [2:0] flags_mul;
+    logic [3:0] flags_div;
+    logic flags_sqrt;
+    logic [2:0] flags_madd;
+    logic [2:0] flags_msub;
+    logic [1:0] flags_cvt_w_d;
+    logic [1:0] flags_cvt_wu_d;
+    logic [1:0] flags_cvt_s_d;
+    logic [1:0] flags_cvt_d_s;
+
+    fadd_double u_fadd_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_add     ),
+        .s_axis_a_tdata (data1),
+        .s_axis_b_tvalid(val_add     ),
+        .s_axis_b_tdata (data2),
+        .m_axis_result_tvalid(valid_add),
+        .m_axis_result_tdata (result_add),
+        .m_axis_result_tuser (flags_add)
+    );
+    fsub_double u_fsub_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_sub     ),
+        .s_axis_a_tdata (data1),
+        .s_axis_b_tvalid(val_sub     ),
+        .s_axis_b_tdata (data2),
+        .m_axis_result_tvalid(valid_sub),
+        .m_axis_result_tdata (result_sub),
+        .m_axis_result_tuser (flags_sub)
+    );
+    fmul_double u_fmul_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_mul     ),
+        .s_axis_a_tdata (data1),
+        .s_axis_b_tvalid(val_mul     ),
+        .s_axis_b_tdata (data2),
+        .m_axis_result_tvalid(valid_mul),
+        .m_axis_result_tdata (result_mul),
+        .m_axis_result_tuser (flags_mul)
+    );
+    fdiv_double u_fdiv_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_div     ),
+        .s_axis_a_tdata (data1),
+        .s_axis_b_tvalid(val_div     ),
+        .s_axis_b_tdata (data2),
+        .m_axis_result_tvalid(valid_div),
+        .m_axis_result_tdata (result_div),
+        .m_axis_result_tuser (flags_div)
+    );
+    fsqrt_double u_fsqrt_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_sqrt     ),
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_sqrt),
+        .m_axis_result_tdata (result_sqrt),
+        .m_axis_result_tuser (flags_sqrt)
+    );
+    fmadd_double u_fma_add_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_madd     ),
+        .s_axis_a_tdata (data1),
+        .s_axis_b_tvalid(val_madd     ),
+        .s_axis_b_tdata (data2),
+        .s_axis_c_tvalid(val_madd     ),
+        .s_axis_c_tdata (data3),
+        .m_axis_result_tvalid(valid_madd),
+        .m_axis_result_tdata (result_madd),
+        .m_axis_result_tuser (flags_madd)
+    );
+    fmsub_double u_fma_sub_double(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_msub     ),
+        .s_axis_a_tdata (data1),
+        .s_axis_b_tvalid(val_msub     ),
+        .s_axis_b_tdata (data2),
+        .s_axis_c_tvalid(val_msub     ),
+        .s_axis_c_tdata (data3),
+        .m_axis_result_tvalid(valid_msub),
+        .m_axis_result_tdata (result_msub),
+        .m_axis_result_tuser (flags_msub)
+    );
+    fcvt_d_w u_fcvt_d_w(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_cvt_d_w     ),
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_cvt_d_w),
+        .m_axis_result_tdata (result_cvt_d_w)
+    );
+    fcvt_d_wu u_fcvt_d_wu(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_cvt_d_wu     ), 
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_cvt_d_wu),
+        .m_axis_result_tdata (result_cvt_d_wu)
+    );
+    fcvt_w_d u_fcvt_w_d(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_cvt_w_d     ),
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_cvt_w_d),
+        .m_axis_result_tdata (result_cvt_w_d),
+        .m_axis_result_tuser (flags_cvt_w_d)
+    );
+    fcvt_wu_d u_fcvt_wu_d(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_cvt_wu_d     ),
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_cvt_wu_d),
+        .m_axis_result_tdata (result_cvt_wu_d),
+        .m_axis_result_tuser (flags_cvt_wu_d)
+    );
+    fcvt_s_d u_fcvt_s_d(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_cvt_s_d     ),
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_cvt_s_d),
+        .m_axis_result_tdata (result_cvt_s_d),
+        .m_axis_result_tuser (flags_cvt_s_d)
+    );
+    fcvt_d_s u_fcvt_d_s(
+        .aclk       (clk        ),
+        .s_axis_a_tvalid(val_cvt_d_s     ),
+        .s_axis_a_tdata (data1),
+        .m_axis_result_tvalid(valid_cvt_d_s),
+        .m_axis_result_tdata (result_cvt_d_s),
+        .m_axis_result_tuser (flags_cvt_d_s)
+    );
+    
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            data1_d <= 32'h0;
+            data2_d <= 32'h0;
+            data3_d <= 32'h0;
+            val_add  <= 1'b0;
+            val_sub  <= 1'b0;
+            val_mul  <= 1'b0;
+            val_div  <= 1'b0;
+            val_sqrt <= 1'b0;
+            val_madd <= 1'b0;
+            val_msub <= 1'b0;
+            val_cvt_s_w <= 1'b0;
+            val_cvt_s_wu <= 1'b0;
+            val_cvt_w_s <= 1'b0;
+            val_cvt_wu_s <= 1'b0;
+            val_cvt_s_d <= 1'b0;
+            val_cvt_d_s <= 1'b0;
+        end else begin
+            data1_d <= data1;
+            data2_d <= data2;
+            data3_d <= data3;
+            if (data1 != data1_d || data2 != data2_d || data3 != data3_d) begin
+                val_add  <= 1'b0;
+                val_sub  <= 1'b0;
+                val_mul  <= 1'b0;
+                val_div  <= 1'b0;
+                val_sqrt <= 1'b0;
+                val_madd <= 1'b0;
+                val_msub <= 1'b0;
+                val_cvt_s_w <= 1'b0;
+                val_cvt_s_wu <= 1'b0;
+                val_cvt_w_s <= 1'b0;
+                val_cvt_wu_s <= 1'b0;
+            end else begin
+                // 这里可以根据inst赋值val信号
+                case(inst)
+                    fadd:    val_add  <= 1'b1;
+                    fsub:    val_sub  <= 1'b1;
+                    fmul:    val_mul  <= 1'b1;
+                    fdiv:    val_div  <= 1'b1;
+                    fsqrt:   val_sqrt <= 1'b1;
+                    fmadd:   val_madd <= 1'b1;
+                    fmsub:   val_msub <= 1'b1;
+                    fnmadd:  val_madd <= 1'b1;
+                    fnmsub:  val_msub <= 1'b1;
+                    fcvt_s_w:  val_cvt_s_w <= 1'b1;
+                    fcvt_s_wu: val_cvt_s_wu <= 1'b1;
+                    fcvt_w_s:  val_cvt_w_s <= 1'b1;
+                    fcvt_wu_s: val_cvt_wu_s <= 1'b1;
+                    default: begin
+                        val_add  <= 1'b0;
+                        val_sub  <= 1'b0;
+                        val_mul  <= 1'b0;
+                        val_div  <= 1'b0;
+                        val_sqrt <= 1'b0;
+                        val_madd <= 1'b0;
+                        val_msub <= 1'b0;
+                        val_cvt_s_w <= 1'b0;
+                        val_cvt_s_wu <= 1'b0;
+                        val_cvt_w_s <= 1'b0;
+                        val_cvt_wu_s <= 1'b0;
+                    end
+                endcase
+            end
+        end
+    end
+    always_comb begin
+        result = 32'h0;
+        flags[3:0] = 4'h0;
+        //flags[4]=(class1[8]||class2[8]||class3[8]) ? 1'b1 : 1'b0; // sNaN flag
+        case(inst)
+            fadd:begin
+                if (valid_add) begin
+                    result = result_add;
+                    flags[4] = flags_add[2]; 
+                    flags[2] = flags_add[1]; 
+                    flags[1] = flags_add[0];
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fsub:begin
+                if (valid_sub) begin
+                    result = result_sub;
+                    flags[4] = flags_sub[2]; 
+                    flags[2] = flags_sub[1]; 
+                    flags[1] = flags_sub[0]; 
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fmul:begin
+                if (valid_mul) begin
+                    result = result_mul;
+                    flags[4] = flags_mul[2]; 
+                    flags[2] = flags_mul[1]; 
+                    flags[1] = flags_mul[0]; 
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fdiv:begin
+                if (valid_div) begin
+                    result = result_div;
+                    flags[3] = flags_div[3]; 
+                    flags[4] = flags_div[2]; 
+                    flags[2] = flags_div[1]; 
+                    flags[1] = flags_div[0]; 
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fsqrt:begin
+                if (valid_sqrt) begin
+                    result = result_sqrt;
+                    flags[4] = flags_sqrt;
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fmadd:begin
+                if (valid_madd) begin
+                    result = result_madd;
+                    flags[4] = flags_madd[2]; 
+                    flags[2] = flags_madd[1];
+                    flags[1] = flags_madd[0];
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fmsub:begin
+                if (valid_msub) begin
+                    result = result_msub;
+                    flags[4] = flags_msub[2];
+                    flags[2] = flags_msub[1];
+                    flags[1] = flags_msub[0];
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fnmadd:begin
+                if (valid_madd) begin
+                    result = {~result_msub[31], result_msub[30:0]}; // Negate the result of fmadd
+                    flags[4] = flags_msub[2];
+                    flags[2] = flags_msub[0];
+                    flags[1] = flags_msub[1];
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fnmsub:begin
+                if (valid_msub) begin
+                    result = {~result_madd[31], result_madd[30:0]}; // Negate the result of fmsub
+                    flags[4] = flags_madd[2];
+                    flags[2] = flags_madd[0];
+                    flags[1] = flags_madd[1];
+                end else begin
+                    result = 32'h0; // Invalid operation
+                    flags = 5'h0; // No flags set
+                end
+            end
+            fcvt_d_w: begin
+                if (valid_cvt_d_w) begin
+                    result = result_cvt_d_w;
+                end else begin
+                    result = 32'h0; 
+                end
+            end
+            fcvt_d_wu: begin
+                if (valid_cvt_d_wu) begin
+                    result = result_cvt_d_wu;
+                end else begin
+                    result = 32'h0; 
+                end
+            end
+            fcvt_d_s: begin
+                if (valid_cvt_d_s) begin
+                    result = result_cvt_d_s;
+                    flags[4] = flags_cvt_d_s[1];
+                    flags[2] = flags_cvt_d_s[0];
+                end else begin
+                    result = 32'h0; 
+                    flags = 5'h0; 
+                end
+            end
+            fcvt_wu_d: begin
+                if (valid_cvt_wu_d) begin
+                    result = result_cvt_wu_d[62:31];
+                    flags[4] = flags_cvt_wu_d[1];
+                    flags[2] = flags_cvt_wu_d[0];
+                end else begin
+                    result = 32'h0; 
+                    flags = 5'h0; 
+                end
+            end
+            fcvt_s_d: begin
+                if (valid_cvt_s_d) begin
+                    result = result_cvt_s_d[62:31];
+                    flags[4] = flags_cvt_s_d[1];
+                    flags[2] = flags_cvt_s_d[0];
+                end else begin
+                    result = 32'h0; 
+                    flags = 5'h0; 
+                end
+            end
+            fcvt_d_s: begin
+                if (valid_cvt_d_s) begin
+                    result = result_cvt_d_s[62:31];
+                    flags[4] = flags_cvt_d_s[1];
+                    flags[2] = flags_cvt_d_s[0];
+                end else begin
+                    result = 32'h0; 
+                    flags = 5'h0; 
+                end
+            end
+
+            default: begin
+                result = 32'h0;
+                flags = 5'h0;
+            end
+        endcase
+    end
 endmodule

@@ -1,0 +1,1626 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:14:34 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 24008
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Aug 16 18:47:21 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/Xilinx/Vivado/2023.2/tps/win64/jre17.0.7_7
+Java executable: 	C:/Xilinx/Vivado/2023.2/tps/win64/jre17.0.7_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: E:/FPU/vivado_project
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2023.2
+RDI_DATADIR: C:/Xilinx/Vivado/2023.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2023.2/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	E:/FPU/vivado_project/vivado.log
+Vivado journal file: 	E:/FPU/vivado_project/vivado.jou
+Engine tmp dir: 	E:/FPU/vivado_project/.Xil/Vivado-24008-LAPTOP-PT2H2IRH
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2023.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent12788 "E:\FPU\vivado_project\FPU1.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2023.2/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2023.2
+RDI_INSTALLVERSION: 2023.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2023.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2023.2/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/Xilinx/Vivado/2023.2/tps/win64/jre17.0.7_7
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: C:/Xilinx/Vivado/2023.2/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2023.2\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2023.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vitis/2023.2/bin;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: E:\FPU\vivado_project:LAPTOP-PT2H2IRH-2025-08-16÷‹¡˘_18-46-57.81
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2023.2/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2023.2
+XILINX_SDK: C:/Xilinx/Vitis/2023.2
+XILINX_VITIS: C:/Xilinx/Vitis/2023.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2023.2
+_RDI_BINROOT: C:\Xilinx\Vivado\2023.2\bin
+_RDI_CWD: E:\FPU\vivado_project
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 925 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: E:\FPU\vivado_project\FPU1.xpr. Version: Vivado v2023.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project E:/FPU/vivado_project/FPU1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 982 MB. GUI used memory: 68 MB. Current time: 8/16/25, 6:47:22 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+105536kb) [00:00:17]
+// [Engine Memory]: 1,114 MB (+1016347kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  2093 ms.
+// Tcl Message: open_project E:/FPU/vivado_project/FPU1.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/FPU/vivado_project/FPU1.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'. 
+// [GUI Memory]: 142 MB (+35345kb) [00:00:18]
+// [Engine Memory]: 1,177 MB (+7704kb) [00:00:18]
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 1518.457 ; gain = 425.348 
+// Project name: FPU1; location: E:/FPU/vivado_project; part: xc7k325tffg900-2
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1787 ms.
+// [GUI Memory]: 164 MB (+15706kb) [00:00:57]
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_top (FPU_top.sv)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv), u_fadd_single : fadd_single (fadd_single.xci)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [GUI Memory]: 197 MB (+25859kb) [00:01:10]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv), u_fadd_single : fadd_single (fadd_single.xci)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (RDIResourceCommand.RDICommands_SETTINGS, settings)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1285 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,228 MB. GUI used memory: 93 MB. Current time: 8/16/25, 6:48:27 PM CST
+// Elapsed time: 10 seconds
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6, true); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree) - Node
+selectComboBox("Editors", "CUSTOM", 12); // e (Editors)
+// Elapsed time: 415 seconds
+setText("Editor:", "C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\Code.exe"); // Q (Editor:)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// HOptionPane Error: ''[file name]' is missing from editor's definition. (Invalid Editor Definition)'
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+setText("Editor:", (String) null); // Q (Editor:)
+setText("Editor:", (String) null); // Q (Editor:)
+dismissDialog("Custom Editor Definition"); // d.a (dialog1)
+selectComboBox("Editors", "VIVADO", 0); // e (Editors)
+dismissDialog("Settings"); // d (dialog0)
+// Elapsed time: 457 seconds
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (RDIResourceCommand.RDICommands_SETTINGS, settings)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectComboBox("Editors", "CUSTOM", 12); // e (Editors)
+// Elapsed time: 23 seconds
+setText("Editor:", "C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code [file name]"); // Q (Editor:)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Custom Editor Definition"); // d.a (dialog2)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // d (dialog0)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_top (FPU_top.sv)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_top (FPU_top.sv), u_fp_formatconv1 : fp_formatconv (fp_formatconv.sv)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'C:/Users/Administrator/AppData/Local/Programs/Microsoft VS Code "E:/FPU/vivado_project/FPU1.srcs/sources_1/new/FPU_top.sv"'
+// HOptionPane Error: 'Unable to launch external text editor using the following arguments:  'C:/Users/Administrator/AppData/Local/Programs/Microsoft VS Code "E:/FPU/vivado_project/FPU1.srcs/sources_1/new/FPU_top.s...'  Please verify that the editor is installed on your system, specified in your PATH, and the path contains no double quotes (e.g., "[path to editor]"). (External Text Editor)'
+// Elapsed time: 60 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_top (FPU_top.sv)]", 2, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (RDIResourceCommand.RDICommands_SETTINGS, settings)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectComboBox("Editors", "CUSTOM", 12); // e (Editors)
+// Elapsed time: 47 seconds
+setText("Editor:", "C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\Code.exe [file name]"); // Q (Editor:)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Custom Editor Definition"); // d.a (dialog3)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (RDIResource.BaseDialog_APPLY)
+dismissDialog("Settings"); // d (dialog0)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_top (FPU_top.sv)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_top (FPU_top.sv)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'C:/Users/Administrator/AppData/Local/Programs/Microsoft VS Code/Code.exe "E:/FPU/vivado_project/FPU1.srcs/sources_1/new/FPU_top.sv"'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,231 MB. GUI used memory: 95 MB. Current time: 8/16/25, 7:18:29 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,231 MB. GUI used memory: 97 MB. Current time: 8/16/25, 7:48:32 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,231 MB. GUI used memory: 77 MB. Current time: 8/16/25, 8:18:36 PM CST
+// Elapsed time: 4410 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 17 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+dismissDialog("Open IP Catalog"); // bq (Open IP Catalog Progress)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "float"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// WARNING: HEventQueue.dispatchEvent() is taking  1304 ms.
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Multiply"); // cD
+selectRadioButton((HResource) null, "Multiply"); // cD
+selectRadioButton((HResource) null, "Float-to-fixed"); // cD
+selectRadioButton((HResource) null, "Add/Subtract"); // cD
+selectRadioButton((HResource) null, "Add"); // cD
+// Elapsed time: 11 seconds
+setText("Component Name", "fadd_double"); // v (Component Name)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog4)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fadd_double 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.Add_Sub_Value {Add} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {14} \   CONFIG.C_Mult_Usage {Full_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Add_Subtract} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fadd_double] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fadd_double'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:33m:39s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:33m:42s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "16", 15); // d (PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS)
+// Elapsed Time for: 'L.f': 01h:33m:44s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fadd_double'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fadd_double'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fadd_double'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fadd_double'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fadd_double'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fadd_double] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fadd_double 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci] -no_script -sync -force -quiet 
+// Tcl Message: INFO: [Vivado 12-23855] The given sub-design is auto disabled, no action will be taken: 'e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci' 
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fadd_double/fadd_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bq (Managing Output Products Progress)
+// Elapsed Time for: 'L.f': 01h:33m:50s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Subtract"); // cD
+setText("Component Name", "fsub_double"); // v (Component Name)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog6)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fsub_double 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.Add_Sub_Value {Subtract} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {14} \   CONFIG.C_Mult_Usage {Full_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fsub_double] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fsub_double'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:34m:18s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fsub_double'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fsub_double'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fsub_double'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fsub_double'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fsub_double'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fsub_double] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fsub_double 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fsub_double_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fsub_double 
+// Tcl Message: [Sat Aug 16 20:21:46 2025] Launched fsub_double_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fsub_double_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsub_double/fsub_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:34m:32s
+// Elapsed Time for: 'L.f': 01h:34m:34s
+// Elapsed Time for: 'L.f': 01h:34m:36s
+// Elapsed time: 43 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectRadioButton((HResource) null, "Multiply"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+// Elapsed time: 11 seconds
+setText("Component Name", "fmul_double", true); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog8)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fmul_double 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {15} \   CONFIG.C_Mult_Usage {Full_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Multiply} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fmul_double] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmul_double'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:35m:56s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:35m:58s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01h:36m:00s
+// Elapsed Time for: 'L.f': 01h:36m:02s
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmul_double'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmul_double'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fmul_double'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fmul_double'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmul_double'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fmul_double] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fmul_double 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: INFO: [Vivado 12-23855] The given sub-design is auto disabled, no action will be taken: 'e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci' 
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmul_double/fmul_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bq (Managing Output Products Progress)
+// Elapsed Time for: 'L.f': 01h:36m:10s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPU_single (FPU_single.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Divide"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+selectCheckBox((HResource) null, "DIVIDE BY ZERO", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog10)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_1 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_DIVIDE_BY_ZERO {true} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {57} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Divide} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips floating_point_1] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'floating_point_1'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:36m:34s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'floating_point_1'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'floating_point_1'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'floating_point_1'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'floating_point_1'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'floating_point_1'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all floating_point_1] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: floating_point_1 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs floating_point_1_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: floating_point_1 
+// Tcl Message: [Sat Aug 16 20:24:03 2025] Launched floating_point_1_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/floating_point_1_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/floating_point_1/floating_point_1.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:36m:40s
+// Elapsed Time for: 'L.f': 01h:36m:42s
+// Elapsed Time for: 'L.f': 01h:36m:44s
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Reciprocal Square Root"); // cD
+selectRadioButton((HResource) null, "Square-root"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+setText("Component Name", "fsqrt_double"); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m (dialog12)
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fsqrt_double 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Latency {57} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Square_root} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fsqrt_double] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fsqrt_double'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:37m:28s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fsqrt_double'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fsqrt_double'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fsqrt_double'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fsqrt_double'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fsqrt_double'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fsqrt_double] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fsqrt_double 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fsqrt_double_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fsqrt_double 
+// Tcl Message: [Sat Aug 16 20:24:56 2025] Launched fsqrt_double_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fsqrt_double_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fsqrt_double/fsqrt_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:37m:36s
+// Elapsed Time for: 'L.f': 01h:37m:38s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectRadioButton((HResource) null, "Compare"); // cD
+selectRadioButton((HResource) null, "Multiply"); // cD
+selectRadioButton((HResource) null, "Reciprocal"); // cD
+selectRadioButton((HResource) null, "Absolute Value"); // cD
+selectRadioButton((HResource) null, "Accumulator"); // cD
+selectRadioButton((HResource) null, "Absolute Value"); // cD
+selectRadioButton((HResource) null, "Accumulator"); // cD
+// Elapsed time: 10 seconds
+selectRadioButton((HResource) null, "Add"); // cD
+// Elapsed time: 10 seconds
+selectRadioButton((HResource) null, "Fused Multiply-Add"); // cD
+selectRadioButton((HResource) null, "Accumulator"); // cD
+selectRadioButton((HResource) null, "Subtract"); // cD
+selectRadioButton((HResource) null, "Fused Multiply-Add"); // cD
+selectRadioButton((HResource) null, "Add"); // cD
+// Elapsed time: 26 seconds
+setText("Component Name", "fmadd_double"); // v (Component Name)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog14)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fmadd_double 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmadd_double'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:39m:40s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// [GUI Memory]: 210 MB (+3754kb) [01:40:00]
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmadd_double'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmadd_double'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fmadd_double'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fmadd_double'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmadd_double'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fmadd_double] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fmadd_double 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fmadd_double_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fmadd_double 
+// Tcl Message: [Sat Aug 16 20:27:09 2025] Launched fmadd_double_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fmadd_double_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmadd_double/fmadd_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:39m:46s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Fused Multiply-Add"); // cD
+selectRadioButton((HResource) null, "Subtract"); // cD
+// Elapsed time: 10 seconds
+setText("Component Name", "fmsub_double"); // v (Component Name)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m (dialog16)
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fmsub_double 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.Add_Sub_Value {Subtract} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {26} \   CONFIG.C_Mult_Usage {Medium_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {FMA} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fmsub_double] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fmsub_double'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:40m:18s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fmsub_double'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fmsub_double'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fmsub_double'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fmsub_double'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fmsub_double'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fmsub_double] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fmsub_double 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fmsub_double_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fmsub_double 
+// Tcl Message: [Sat Aug 16 20:27:46 2025] Launched fmsub_double_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fmsub_double_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fmsub_double/fmsub_double.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:40m:26s
+// Elapsed Time for: 'L.f': 01h:40m:28s
+// Elapsed Time for: 'L.f': 01h:40m:30s
+// Elapsed time: 26 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Fixed-to-float"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Operation Selection", 0); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Float-to-float"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+// TclEventType: FILE_SET_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+// Elapsed time: 12 seconds
+setText("Component Name", "fcvt_"); // v (Component Name)
+// Elapsed time: 16 seconds
+setText("Component Name", "fcvt_d_s"); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog18)
+// TclEventType: CREATE_IP_CORE
+// [GUI Memory]: 222 MB (+831kb) [01:42:10]
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_d_s 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Single} \   CONFIG.C_A_Exponent_Width {8} \   CONFIG.C_A_Fraction_Width {24} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {2} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Float_to_float} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fcvt_d_s] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fcvt_d_s'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:41m:54s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fcvt_d_s'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fcvt_d_s'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fcvt_d_s'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fcvt_d_s'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fcvt_d_s'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fcvt_d_s] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_d_s 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fcvt_d_s_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_d_s 
+// Tcl Message: [Sat Aug 16 20:29:23 2025] Launched fcvt_d_s_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fcvt_d_s_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_s/fcvt_d_s.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:42m:00s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// Elapsed Time for: 'L.f': 01h:42m:02s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Float-to-float"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "UNDERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 28 seconds
+setText("Component Name", "fcvt_s_d"); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m (dialog20)
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_s_d 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Has_UNDERFLOW {true} \   CONFIG.C_Latency {3} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {8} \   CONFIG.C_Result_Fraction_Width {24} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Float_to_float} \   CONFIG.Result_Precision_Type {Single} \ ] [get_ips fcvt_s_d] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fcvt_s_d'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:42m:50s
+// [GUI Memory]: 238 MB (+5050kb) [01:43:09]
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fcvt_s_d'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fcvt_s_d'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fcvt_s_d'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fcvt_s_d'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fcvt_s_d'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fcvt_s_d] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_s_d 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fcvt_s_d_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_s_d 
+// Tcl Message: [Sat Aug 16 20:30:19 2025] Launched fcvt_s_d_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fcvt_s_d_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_s_d/fcvt_s_d.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:42m:56s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Fixed-to-float"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+// Elapsed time: 15 seconds
+setText("Component Name", "fcvt_d_w"); // v (Component Name)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Operation Selection", 0); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog22)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_d_w 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Int32} \   CONFIG.C_A_Exponent_Width {32} \   CONFIG.C_A_Fraction_Width {0} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Latency {6} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Fixed_to_float} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fcvt_d_w] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fcvt_d_w'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fcvt_d_w'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fcvt_d_w'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fcvt_d_w'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fcvt_d_w'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fcvt_d_w'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fcvt_d_w] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_d_w 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fcvt_d_w_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_d_w 
+// Tcl Message: [Sat Aug 16 20:31:07 2025] Launched fcvt_d_w_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fcvt_d_w_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_w/fcvt_d_w.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// [GUI Memory]: 258 MB (+8441kb) [01:44:06]
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Fixed-to-float"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Uint32"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+// Elapsed time: 11 seconds
+setText("Component Name", "fcvt_d_wu"); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m (dialog24)
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_d_wu 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Uint32} \   CONFIG.C_A_Exponent_Width {32} \   CONFIG.C_A_Fraction_Width {0} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Latency {5} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {11} \   CONFIG.C_Result_Fraction_Width {53} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Fixed_to_float} \   CONFIG.Result_Precision_Type {Double} \ ] [get_ips fcvt_d_wu] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fcvt_d_wu'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:44m:12s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fcvt_d_wu'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fcvt_d_wu'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fcvt_d_wu'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fcvt_d_wu'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fcvt_d_wu'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fcvt_d_wu] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_d_wu 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fcvt_d_wu_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_d_wu 
+// Tcl Message: [Sat Aug 16 20:31:41 2025] Launched fcvt_d_wu_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fcvt_d_wu_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_d_wu/fcvt_d_wu.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Elapsed Time for: 'L.f': 01h:44m:18s
+// Elapsed Time for: 'L.f': 01h:44m:20s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+selectRadioButton((HResource) null, "Float-to-fixed"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+// Elapsed time: 10 seconds
+setText("Component Name", "fcvt_w_d"); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m (dialog26)
+// [GUI Memory]: 271 MB (+793kb) [01:45:11]
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_w_d 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Latency {6} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {32} \   CONFIG.C_Result_Fraction_Width {0} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Float_to_fixed} \   CONFIG.Result_Precision_Type {Int32} \ ] [get_ips fcvt_w_d] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fcvt_w_d'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:44m:56s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fcvt_w_d'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fcvt_w_d'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fcvt_w_d'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fcvt_w_d'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fcvt_w_d'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fcvt_w_d] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_w_d 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fcvt_w_d_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_w_d 
+// Tcl Message: [Sat Aug 16 20:32:24 2025] Launched fcvt_w_d_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fcvt_w_d_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_w_d/fcvt_w_d.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Floating-point ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:floating_point:7.1", 3, "Floating-point", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Customize IP"); // i (Customize IP Progress)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectRadioButton((HResource) null, "Float-to-fixed"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Inputs", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Double"); // cD
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Precision of Result", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectRadioButton((HResource) null, "Custom"); // cD
+setText("Exponent Width", "33"); // v (Exponent Width)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Optimizations", 3); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectComboBox("Flow Control (Flow_Control)", "NonBlocking", 1); // bN (Flow Control (Flow_Control))
+selectCheckBox((HResource) null, "OVERFLOW", true); // f: TRUE
+selectCheckBox((HResource) null, "INVALID OP", true); // f: TRUE
+setText("Component Name", "fcvt_wu_d"); // v (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m (dialog28)
+// Tcl Message: create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fcvt_wu_d 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.A_Precision_Type {Double} \   CONFIG.C_A_Exponent_Width {11} \   CONFIG.C_A_Fraction_Width {53} \   CONFIG.C_Accum_Input_Msb {32} \   CONFIG.C_Accum_Lsb {-31} \   CONFIG.C_Accum_Msb {32} \   CONFIG.C_Has_INVALID_OP {true} \   CONFIG.C_Has_OVERFLOW {true} \   CONFIG.C_Latency {6} \   CONFIG.C_Mult_Usage {No_Usage} \   CONFIG.C_Rate {1} \   CONFIG.C_Result_Exponent_Width {33} \   CONFIG.C_Result_Fraction_Width {31} \   CONFIG.Flow_Control {NonBlocking} \   CONFIG.Has_RESULT_TREADY {false} \   CONFIG.Operation_Type {Float_to_fixed} \   CONFIG.Result_Precision_Type {Custom} \ ] [get_ips fcvt_wu_d] 
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fcvt_wu_d'... 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:45m:32s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fcvt_wu_d'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fcvt_wu_d'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fcvt_wu_d'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fcvt_wu_d'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fcvt_wu_d'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fcvt_wu_d] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_wu_d 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs fcvt_wu_d_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fcvt_wu_d 
+// Tcl Message: [Sat Aug 16 20:33:01 2025] Launched fcvt_wu_d_synth_1... Run output will be captured here: E:/FPU/vivado_project/FPU1.runs/fcvt_wu_d_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files e:/FPU/vivado_project/FPU1.srcs/sources_1/ip/fcvt_wu_d/fcvt_wu_d.xci] -directory E:/FPU/vivado_project/FPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/FPU/vivado_project/FPU1.ip_user_files -ipstatic_source_dir E:/FPU/vivado_project/FPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPU/vivado_project/FPU1.cache/compile_simlib/modelsim} {questa=E:/FPU/vivado_project/FPU1.cache/compile_simlib/questa} {riviera=E:/FPU/vivado_project/FPU1.cache/compile_simlib/riviera} {activehdl=E:/FPU/vivado_project/FPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:45m:38s
+// Elapsed Time for: 'L.f': 01h:45m:40s
+// Elapsed Time for: 'L.f': 01h:45m:42s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 553 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fcvt_d_s (fcvt_d_s.xci)]", 16, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fcvt_d_s (fcvt_d_s.xci)]", 16, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Interface Options", 4); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+dismissDialog("Re-customize IP"); // m (dialog30)
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fcvt_d_s (fcvt_d_s.xci)]", 16, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fcvt_d_s (fcvt_d_s.xci)]", 16, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // f (PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS): FALSE
+// Elapsed time: 29 seconds
+dismissDialog("Re-customize IP"); // m (dialog31)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,231 MB. GUI used memory: 147 MB. Current time: 8/16/25, 8:48:37 PM CST

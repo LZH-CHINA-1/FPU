@@ -1,16 +1,16 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/sim/fcvt_wu_s.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_w_s/sim/fcvt_w_s.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_wu/sim/fcvt_s_wu.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_w/sim/fcvt_s_w.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmsub_single/sim/fmsub_single.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmadd_single/sim/fmadd_single.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sim/sqrt_single.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/div_single/sim/div_single.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_mul_s/sim/floating_point_mul_s.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fsub_single/sim/fsub_single.v" \
-"../../../../../../../../../../../Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fadd_single/sim/fadd_single.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_wu_s/sim/fcvt_wu_s.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_w_s/sim/fcvt_w_s.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_wu/sim/fcvt_s_wu.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fcvt_s_w/sim/fcvt_s_w.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmsub_single/sim/fmsub_single.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fmadd_single/sim/fmadd_single.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/sqrt_single/sim/sqrt_single.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/div_single/sim/div_single.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/floating_point_mul_s/sim/floating_point_mul_s.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fsub_single/sim/fsub_single.v" \
+"C:/Users/Desktop/files/JYD/FPU/FPU1/FPU1/FPU1.srcs/sources_1/i/fadd_single/sim/fadd_single.v" \
 
 sv xil_defaultlib  \
 "../../../../FPU1.srcs/sources_1/new/FPU_single.sv" \
